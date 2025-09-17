@@ -11,5 +11,4 @@ It is built using **HTML, CSS, and JavaScript**, with a responsive design to ens
 
 ## Setup
 1. Clone the repository:
-   ```bash
-git clone https://github.com/thevishesh21/SPIE-BLOG-PAGE.git
+   ```bash git clone https://github.com/thevishesh21/SPIE-BLOG-PAGE.git
