@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--SPIE Main HTML File-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIE ANDC DU - Optics & Photonics News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="site-title">SPIE ANDC DU</h1>
+            <div class="header-actions">
+                <button class="search-toggle" aria-label="Toggle search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 14l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content-->
+    <main class="main-content">
+        <div class="content-grid">
+            
+            <!--Stories Column -->
+            <section class="featured-column" aria-labelledby="featured-heading">
+                <h2 id="featured-heading" class="section-title">Featured Stories</h2>
+                
+                <article class="featured-story">
+                    <div class="featured-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop" 
+                             alt="Students working with photonics equipment in laboratory"
+                             class="featured-image"
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="featured-content">
+                        <span class="category-badge">Photonics</span>
+                        <h3 class="featured-headline">SPIE ANDC DU: Hands-on Workshop on Photonics for Student Chapters</h3>
+                        <p class="featured-excerpt">The SPIE Student Chapter at Delhi University successfully conducted a comprehensive workshop on advanced photonics techniques, attracting over 200 participants from across the region.</p>
+                        
+                        <button class="cta-button" data-article="featured">READ THE STORY</button>
+                        
+                        <div class="article-meta">
+                            <span class="author">By Dr. A. K. Verma</span>
+                            <span class="date">Nov 17, 2024</span>
+                            <span class="category">Events</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-thumbnails">
+                        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=150&h=100&fit=crop" 
+                             alt="Optical equipment setup"
+                             loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=100&fit=crop" 
+                             alt="Workshop participants"
+                             loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=150&h=100&fit=crop" 
+                             alt="Laboratory demonstration"
+                             loading="lazy">
+                    </div>
+                </article>
+            </section>
+
+            <!-- Latest News Column -->
+            <section class="latest-column" aria-labelledby="latest-heading">
+                <h2 id="latest-heading" class="section-title">Latest News</h2>
+                
+                <div class="latest-news-list" id="newsList">
+                    <!--Articles-->
+                    <article class="news-item" data-category="research">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=120&h=80&fit=crop" 
+                             alt="Optical sensing laboratory"
+                             class="news-thumbnail"
+                             loading="lazy">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="category-badge">Research</span>
+                                <time>Nov 15, 2024</time>
+                            </div>
+                            <h3 class="news-title">
+                                <a href="#" class="news-link">New Lab Established for Optical Sensing – SPIE Student Chapter</a>
+                            </h3>
+                            <p class="news-author">Prof. Meera Sharma</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item" data-category="tech">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=120&h=80&fit=crop" 
+                             alt="AI imaging technology"
+                             class="news-thumbnail"
+                             loading="lazy">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="category-badge">Tech</span>
+                                <time>Nov 14, 2024</time>
+                            </div>
+                            <h3 class="news-title">
+                                <a href="#" class="news-link">AI-enhanced Imaging Techniques: Campus Talk Recap</a>
+                            </h3>
+                            <p class="news-author">Dr. Rajesh Kumar</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item" data-category="conference">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=120&h=80&fit=crop" 
+                             alt="Conference hall"
+                             class="news-thumbnail"
+                             loading="lazy">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="category-badge">Conference</span>
+                                <time>Nov 13, 2024</time>
+                            </div>
+                            <h3 class="news-title">
+                                <a href="#" class="news-link">SPIE Annual Symposium: Call for Papers</a>
+                            </h3>
+                            <p class="news-author">Conference Committee</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=120&h=80&fit=crop" 
+                             alt="Student competition"
+                             class="news-thumbnail"
+                             loading="lazy">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="category-badge">Events</span>
+                                <time>Nov 12, 2024</time>
+                            </div>
+                            <h3 class="news-title">
+                                <a href="#" class="news-link">Optics Quiz Competition Winners Announced</a>
+                            </h3>
+                            <p class="news-author">Student Affairs</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item" data-category="careers">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=120&h=80&fit=crop" 
+                             alt="Career opportunities"
+                             class="news-thumbnail"
+                             loading="lazy">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="category-badge">Careers</span>
+                                <time>Nov 11, 2024</time>
+                            </div>
+                            <h3 class="news-title">
+                                <a href="#" class="news-link">Industry Partners Offer Internships in Photonics</a>
+                            </h3>
+                            <p class="news-author">Placement Cell</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item" data-category="research">
+                        <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=120&h=80&fit=crop" 
+                             alt="Research breakthrough"
+                             class="news-thumbnail"
+                             loading="lazy">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="category-badge">Research</span>
+                                <time>Nov 10, 2024</time>
+                            </div>
+                            <h3 class="news-title">
+                                <a href="#" class="news-link">Breakthrough in Quantum Optics Research</a>
+                            </h3>
+                            <p class="news-author">Research Team</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--Trending Column -->
+            <aside class="sidebar-column" aria-labelledby="trending-heading">
+                <h2 id="trending-heading" class="section-title">Trending</h2>
+                
+                <div class="trending-list">
+                    <article class="trending-item">
+                        <div class="trending-content">
+                            <span class="trending-category">Optics</span>
+                            <h4 class="trending-title">Novel Laser Applications in Medical Imaging</h4>
+                            <time class="trending-date">Nov 16, 2024</time>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=80&h=60&fit=crop" 
+                             alt="Medical imaging"
+                             class="trending-thumbnail"
+                             loading="lazy">
+                    </article>
+
+                    <article class="trending-item">
+                        <div class="trending-content">
+                            <span class="trending-category">Tech</span>
+                            <h4 class="trending-title">Silicon Photonics Revolution</h4>
+                            <time class="trending-date">Nov 15, 2024</time>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=80&h=60&fit=crop" 
+                             alt="Silicon chip"
+                             class="trending-thumbnail"
+                             loading="lazy">
+                    </article>
+
+                    <article class="trending-item">
+                        <div class="trending-content">
+                            <span class="trending-category">Events</span>
+                            <h4 class="trending-title">Workshop Registration Open</h4>
+                            <time class="trending-date">Nov 14, 2024</time>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=80&h=60&fit=crop" 
+                             alt="Workshop event"
+                             class="trending-thumbnail"
+                             loading="lazy">
+                    </article>
+                </div>
+
+                <!--Topic Chips-->
+                <div class="topic-chips">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="tech">Tech</button>
+                    <button class="chip" data-filter="optics">Optics</button>
+                    <button class="chip" data-filter="photonics">Photonics</button>
+                    <button class="chip" data-filter="research">Research</button>
+                    <button class="chip" data-filter="events">Events</button>
+                    <button class="chip" data-filter="careers">Careers</button>
+                </div>
+
+                <!-- Popular Topics Section -->
+                <h3 class="popular-heading">Popular Topics</h3>
+                <ul class="popular-topics">
+                    <li><a href="#">Fiber Optics</a></li>
+                    <li><a href="#">Laser Technology</a></li>
+                    <li><a href="#">Quantum Computing</a></li>
+                    <li><a href="#">Biophotonics</a></li>
+                    <li><a href="#">Optical Communications</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Article Modal -->
+    <div class="article-modal" id="articleModal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title">SPIE ANDC DU: Hands-on Workshop on Photonics for Student Chapters</h2>
+            <div class="modal-body">
+                <p>The SPIE Student Chapter at Delhi University successfully conducted a comprehensive workshop on advanced photonics techniques, attracting over 200 participants from across the region.</p>
+                <p>The workshop covered cutting-edge topics including fiber optic communications, laser applications in medicine, and quantum optics fundamentals. Industry experts and academic leaders shared their insights on the latest developments in the field.</p>
+                <p>Participants had hands-on experience with state-of-the-art equipment and received certificates of participation. The event strengthened industry-academia collaboration and opened new opportunities for student research projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
